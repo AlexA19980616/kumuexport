@@ -16,7 +16,7 @@ connections_file = st.file_uploader("Upload Connections CSV File", type=["csv"])
 # Column names that are modified during processing
 tags_col = "Tags"
 filter_cols = ["From", "To"]
-image_col = "Image"
+image_col = "Bio Image"
 
 # Function to extract the strings within parentheses and return the last string
 def extract_parentheses(text):
