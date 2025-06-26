@@ -80,6 +80,9 @@ if elements_file and connections_file:
         if elem_cols_remove:
             st.warning("No matching columns found to remove in Elements")
 
+    # Add a new empty 'Label' column to connections
+    connections_read["Label"] = ""
+
     # Remove additional columns from connections if they exist
     removed_cols = []
     for col in conn_cols_remove:
